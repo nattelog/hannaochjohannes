@@ -1,0 +1,52 @@
+body {
+  padding-top: 110px;
+}
+
+.container {
+  max-width: 980px;
+}
+
+/**
+ * Navbar.
+ */
+
+.navbar {
+  min-height: 90px;
+  border-color: transparent;
+  background-color: rgba(255,255,255,0.5);
+  background: url('../../public/img/dots.png');
+}
+
+.navbar-collapse.collapse, .navbar-header, .collapsing {
+  text-align: center;
+}
+
+.navbar-collapse {
+  border-top: none;
+}
+
+.nav.navbar-nav {
+  float: none;
+  display: inline-block;
+}
+
+.navbar-toggle {
+  float: none;
+  padding: 23px 20px;
+  margin-top: 14px;
+  margin-right: 0;
+  border-radius: 40px;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-toggle:focus, .navbar-toggle:hover {
+  background-color: transparent !important;
+}
+
+@media (min-width: 768px) {
+  .navbar-nav > li {
+    margin-top: 20px;
+  }
+}
