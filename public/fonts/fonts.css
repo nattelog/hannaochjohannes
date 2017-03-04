@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'Curly Font';
+  src: url('./curly.woff')
+}
+
+@font-face {
+  font-family: 'Adriane';
+  src: url('./adriane.otf')
+}
+
+@font-face {
+  font-family: 'Sans Serif';
+  src: url('./sans-serif.woff2')
+}

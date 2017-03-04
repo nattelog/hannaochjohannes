@@ -1,0 +1,33 @@
+.reservation-form .control-buttons {
+  text-align: right;
+  margin-top: 12px;
+}
+
+.reservation-form .control-buttons > button {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.reservation-form .control-buttons > button:first-child {
+  margin-right: 5px;
+}
+
+.reservation-form input {
+  width: 30px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #fff;
+  text-align: center;
+  color: #fff;
+}
+
+.reservation-form select {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.reservation-form input, .reservation-form select {
+  margin: 0 5px 0 5px;
+}
+

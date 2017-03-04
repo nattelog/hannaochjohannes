@@ -1,0 +1,25 @@
+.invitation-card {
+  background-color: white;
+  max-width: 700px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 6%;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.invitation-card > img {
+  width: 100%;
+}
+
+.invitation-card p {
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+.invitation-card > p:first-child {
+  margin-bottom: 5%;
+}
+
+.invitation-card > div {
+  margin-top: 5%;
+}

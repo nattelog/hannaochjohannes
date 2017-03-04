@@ -1,8 +1,15 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
+import './App.css';
+import '../../public/fonts/fonts.css';
 import Navbar from './Navbar';
 import Section from './Section';
 import ScrollLink from './ScrollLink';
+import InvitationCardSection from './InvitationCardSection';
+import StorySection from './StorySection';
+import ImageDividerSection from './ImageDividerSection';
+import WishlistSection from './WishlistSection';
+import MapSection from './MapSection';
 
 export default class App extends React.Component {
   constructor(props) {
@@ -31,7 +38,7 @@ export default class App extends React.Component {
 
     sections.find((section, index) => {
       const { height } = section.getBoundingClientRect();
-      const top = section.offsetTop - 110;
+      const top = section.offsetTop - 90;
       const bottom = top + height;
 
       if (position >= top && position < bottom) {
@@ -57,23 +64,19 @@ export default class App extends React.Component {
   render() {
     const { sections, activeSection } = this.state;
     const navItems = [
-      <ScrollLink target={sections[0]}>Vår Story</ScrollLink>,
-      <ScrollLink target={sections[1]}>Önskelista</ScrollLink>,
-      <ScrollLink target={sections[2]}>Karta</ScrollLink>
+      <ScrollLink target={sections[0]}>VÅR STORY</ScrollLink>,
+      <ScrollLink target={sections[1]}>ÖNSKELISTA</ScrollLink>,
+      <ScrollLink target={sections[2]}>KARTA</ScrollLink>
     ];
 
     return (
       <div>
         <Navbar items={navItems} activeSection={activeSection} />
-        <Section el={r => { this.story = r; }}>
-          Vår story börjar här.
-        </Section>
-        <Section el={r => { this.wishList = r; }}>
-          Vår önskelista finns här.
-        </Section>
-        <Section el={r => { this.map = r; }}>
-          Här finns kartan.
-        </Section>
+        <InvitationCardSection />
+        <StorySection el={r => { this.story = r; }} />
+        <ImageDividerSection />
+        <WishlistSection el={r => { this.wishList = r; }} />
+        <MapSection el={r => { this.map = r; }} />
       </div>
     );
   }

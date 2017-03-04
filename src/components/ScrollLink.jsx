@@ -7,7 +7,7 @@ export default class ScrollLink extends React.Component {
     const top = target.offsetTop;
 
     const start = window.pageYOffset;
-    const end = top - 110; // static navbar height
+    const end = top - 90; // static navbar height
 
     ease(
       start,

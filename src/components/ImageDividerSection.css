@@ -1,0 +1,12 @@
+.image-divider-section {
+  background-color: #ece9e7;
+}
+
+.image-divider-section .image-container {
+  padding: 5%;
+  background-color: white;
+}
+
+.image-divider-section .image-container > img {
+  width: 100%;
+}

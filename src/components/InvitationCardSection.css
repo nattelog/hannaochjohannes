@@ -1,0 +1,19 @@
+.invitation-card-section {
+  background: url('../../public/img/leaves.jpg') no-repeat center center fixed;
+  background-size: cover;
+  position: relative;
+}
+
+.invitation-card-section .container {
+  padding-top: 90px;
+  padding-bottom: 9%;
+  position: relative;
+}
+
+.invitation-card-section .invitation-dots {
+  background: url('../../public/img/dots-no-opacity.png');
+  position: absolute;
+  bottom: 50%;
+  top: 0;
+  width: 100%;
+}

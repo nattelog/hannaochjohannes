@@ -10,7 +10,9 @@ export default class AbstractNavbar extends React.Component {
     return (
       <Navbar collapseOnSelect fixedTop>
         <Header>
-          <Toggle />
+          <Toggle>
+            MENY
+          </Toggle>
         </Header>
         <Collapse>
           <Nav activeKey={activeSection}>
