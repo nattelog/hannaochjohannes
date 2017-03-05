@@ -9,6 +9,7 @@
 .wishlist-item .alert {
   font-family: 'Adriande';
   display: inline-block;
+  margin-bottom: -5px;
 }
 
 .wishlist-item .alert button {
@@ -35,12 +36,19 @@
 }
 
 .wishlist-item button {
-  margin-left: 30px;
   padding: 3px 6px;
   font-size: 12px;
   color: #fff;
   border-color: #fff;
   background: transparent;
+}
+
+.wishlist-item .item-description button {
+  margin-top: 10px;
+}
+
+.wishlist-item .item-description h2 > span {
+  margin-right: 30px;
 }
 
 .wishlist-item button:hover,

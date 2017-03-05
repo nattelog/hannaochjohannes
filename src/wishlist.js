@@ -1,7 +1,7 @@
 import io from 'socket.io-client';
 
 export default function Wishlist(onConnect, onConnectError) {
-  const socket = io('ws://localhost:5000');
+  const socket = io('ws://80.217.101.63:1338');
 
   socket.on('connect', onConnect);
   socket.on('connect_error', onConnectError);
