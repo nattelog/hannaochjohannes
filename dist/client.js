@@ -41296,7 +41296,7 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function Wishlist(onConnect, onConnectError) {
-	  var socket = (0, _socket2.default)('ws://localhost:5000');
+	  var socket = (0, _socket2.default)('ws://80.217.101.63:1338');
 
 	  socket.on('connect', onConnect);
 	  socket.on('connect_error', onConnectError);
